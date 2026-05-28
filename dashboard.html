@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspicious Login Simulator - Meme Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-box">
+            <div class="dashboard-header">
+                <h1>Suspicious Login Simulator</h1>
+                <button id="logoutBtn" class="btn btn-danger">Logout (Escape?)</button>
+            </div>
+
+            <div id="welcomeMessage" class="welcome-message"></div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Logins</h3>
+                    <p id="totalLogins" class="stat-value">-</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Last Login</h3>
+                    <p id="lastLoginTime" class="stat-value">-</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Last Browser</h3>
+                    <p id="lastBrowser" class="stat-value">-</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Login Status</h3>
+                    <p id="loginStatus" class="stat-value">Active</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🚨 Dramatic Security Alerts</h2>
+                <div id="dramaContainer" class="dramatic-list">
+                    <p class="loading">Checking for suspicious activity...</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📋 Your Naughty Login Log</h2>
+                <div id="historyContainer" class="history-list">
+                    <p class="loading">Loading your login shame...</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⚠️ Suspicious Activity</h2>
+                <div id="suspiciousContainer" class="suspicious-list">
+                    <p class="loading">Investigating suspicious behavior...</p>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="message error-message"></div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

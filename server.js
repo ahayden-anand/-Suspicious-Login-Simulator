@@ -6,7 +6,7 @@ const SECRET = 'your_secret_key_here';
 
 // Middleware
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 // In-memory storage for login history and sessions
 const loginHistory = {};
@@ -265,12 +265,12 @@ app.get('/health', (req, res) => {
 
 // Serve login page
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 // Serve dashboard page
 app.get('/dashboard', (req, res) => {
-  res.sendFile(__dirname + '/public/dashboard.html');
+  res.sendFile(__dirname + '/dashboard.html');
 });
 
 // Error handling middleware
